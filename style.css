@@ -1,0 +1,1191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    /* cursor: pointer; */
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fcfbf6;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vh;
+}
+
+nav .links{
+    padding-right: 65px;
+}
+
+nav .links a{
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav .links a:hover{
+    text-decoration: underline;
+}
+
+nav .links a.cart{
+    color: rgba(0, 0, 0, 0.524);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+nav .links a.cart:hover{
+    color: black;
+}
+
+nav h2{
+    margin-left: 65px;
+    font-size: x-large;
+    margin-bottom: 20px;
+    letter-spacing: 15px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+section.one{
+    display: flex;
+    background-color: #8a3415;
+    height: 112vh;
+}
+
+section.one div.image{
+    background:url(/images/WhatsApp\ Image\ 2023-08-20\ at\ 22.39.52.jpg) ;
+    width: 155%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92vh;
+    display: flex;
+    align-items: end;
+}
+
+section.one div.image h2{
+    font-size: 150px;
+    font-weight: 300;
+    margin-bottom: 18px;
+    margin-left: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section.one div p{
+    color: white;
+    padding: 40px 70px;
+    margin-right: 25px;
+    text-align: left;
+    font-size: small;
+    line-height: 20px;
+}
+
+section.one div .under{
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 410px;
+}
+
+section.one div a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100;
+    margin-left: 70px;
+    position: relative;
+    bottom: 35px;
+    color: rgba(212, 212, 212, 0.524);
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+section.one div a:hover{
+    color: white;
+}
+
+section.one div i{
+    color: #b05838;
+    font-size: small;
+    position: relative;
+    bottom: 35px;
+    left: 5px;
+    transition: 0.5s;
+}
+
+section.one div i:hover{
+    color: white;
+}
+
+
+/* ////////////////////////////////// */
+
+
+section.two div.daily{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.two div.daily h3{
+    font-size: 100px;
+    font-family: 'Lucida Sans';
+    font-weight: 500;
+    margin: 72px;
+}
+
+section.two div.links{
+    height: 67px;
+    margin-top: 100px;
+    margin-right: 65px;
+}
+
+section.two div.links p{
+    font-size: 13.27px;
+    line-height: 18.5833px;
+    font-weight: 400;
+    /* position: relative; */
+    /* padding: 70px; */
+    
+}
+
+section.two div.links a{
+    font-size: 13.27px;
+    line-height: 18.5833px;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    color: rgb(136, 134, 134);
+    top:34px;
+    left: 15px;
+}
+
+section.two div.links a:hover{
+    color: black;
+}
+
+section.two div.links i{
+    font-size: 13.27px;
+    line-height: 18.5833px;
+    position: relative;
+    top:35px;
+    left: 15px;
+    color: rgb(136, 134, 134);
+}
+
+section.two div.links i:hover{
+    color: black;
+}
+
+section.two div.products{
+    display: flex;
+    justify-content: center;
+    height: 103vh;
+}
+
+section.two div.products li{
+    position: relative;
+    display: inline-block;
+    width: 310px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+section.two div.products .card .img-top{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+section.two div.products .card:hover .img-top{
+    display: inline;
+}
+
+section.two div.products div img{
+    width: 225px;
+    height: 310px;
+    /* border: 2px solid blueviolet; */
+    margin: 40px;
+}
+
+section.two div.products li h1{
+    /* color: red ; */
+    margin-left: 40px;
+    line-height: 23.7667px;
+    font-weight: 500;
+    font-size: 19.8px;
+    letter-spacing: 0.2654px;
+    text-align: start;
+    text-transform: uppercase;
+    margin-right: 120px;
+}
+
+section.two div.products li p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.8px;
+    opacity: 0.5;
+    margin: 12px 40px 30px 40px;
+    height: 101px;
+}
+
+section.two div.products li a{
+    font-size: 14.27px;
+    font-weight: 500;
+    letter-spacing: 0.2654px;
+    line-height: 13.2667px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+section.two div.products li a:hover{
+    text-decoration: underline;
+}
+
+section.two div.products li i{
+    font-size: 12px;
+}
+
+
+/* ///////////////////////////////////// part3*/
+
+section.part-three{
+    margin-top: 120px;
+    display: flex;
+    height: 150vh;
+}
+
+section.part-three div.image{
+    background: url(/images/beleco-home1-931x1024.jpg);
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:55% 10% ;
+    /* min-height: 250px; */
+
+}
+
+section.part-three div.left{
+    width: 50%;
+    background-color: #101010;
+}
+
+section.part-three div.left p.top-p{
+    color: #ffffff;
+    /* font-family: "Inter", sans-serif; */
+    font-size: 13.27px;
+    line-height: 18.5833px;
+    margin-top: 40px;
+    padding-right: 30px;
+}
+
+section.part-three div.left div h2{
+    color: white;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 54.95px;
+    width: 70%;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans';
+    margin-top: 170px;
+    margin-left: 70px;
+    letter-spacing: 0.2654px;;
+}
+
+section.part-three div.left div.header{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 150px;
+}
+
+section.part-three div.left div.left-image{
+    display: flex;
+}
+
+section.part-three div.left div.left-image img{
+    width: 173.75px;
+    height: 265.2px;
+    margin-left: 70px;
+    margin-top: 195px;
+}
+
+section.part-three div.left div.left-image div {
+    padding: 100px;
+}
+
+section.part-three div.left div.left-image div p{
+    color: #ffffff;
+    width: 260px;
+    font-size: 13.27px;
+    line-height: 18.5833px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    letter-spacing: 0.2654px;
+    /* font-family: "Inter", sans-serif; */
+}
+
+section.part-three div.left div.left-image a{
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+section.part-three div.left div.left-image a:hover{
+    background-color: black;
+    transition: 0.7s;
+}
+
+section.part-three div.left div.left-image i{
+    color: white;
+    font-size: 10px;
+}
+
+/* //////////////////// */
+
+section.four div{
+    margin-top: 80px;
+}
+
+section.four div h3.first-h{
+    font-size: 138.5px;
+    font-family: 'Lucida Sans Regular';
+    font-weight: 100;
+    letter-spacing: 7.2px;
+    line-height: 117.45px;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 80px;
+}
+
+section.four div h3.second-h{
+    font-size: 138.5px;
+    display: flex;
+    justify-content: right;
+    margin-right: 80px;
+    font-family: 'Lucida Sans';
+    font-weight: 400;
+    /* letter-spacing: -3.2px; */
+    line-height: 117.45px;
+    text-transform: uppercase;
+    color: black;
+}
+
+section.four div p.organic{
+    font-size: 19.8px;
+    text-align: center;
+    line-height: 27.7167px;
+    letter-spacing: 0.2654px;
+    margin-bottom: 30px;
+    margin-top: 85px;
+}
+
+section.four div p.nature{
+    font-size: 26.5px;
+    text-align: center;
+    max-width: 760px;
+    margin-top: 112px;
+    margin-left: 300px;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    line-height: 37px;
+    letter-spacing: 0.32px;
+    margin-bottom: 160px;
+}
+
+/* ///////////////////////five/// */
+
+section.five{
+    display: flex;
+}
+
+section.five div.left{
+    /* width: 84%; */
+    height: 135vh;
+}
+
+section.five div{
+    /* width: 100%; */
+    border: 1px solid rgb(233, 228, 225);
+    border-left: none;
+}
+
+section.five div h3{
+    font-size: 58px;
+    font-family: 'Lucida Sans';
+    font-weight: 400;
+    /* letter-spacing: -3.2px; */
+    /* line-height: 55px; */
+    text-transform: uppercase;
+    color: black;
+    margin-left: 70px;
+    position: relative;
+    top: 237px;
+}
+
+section.five div.left p{
+    font-size: 13.27px;
+    line-height: 18.5833px;
+    margin-left: 70px;
+}
+
+section.five div.left p.paragraphe{
+    margin-top: 260px;
+    /* margin-right: 100px; */
+    padding-right: 112px;    
+    color: rgb(16, 16, 16);
+    /* font-family: "Inter", sans-serif; */
+}
+
+section.five div .Treatement-Better{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 150px;
+    /* font-family: "Inter", sans-serif; */
+    margin-top: 40px;
+    padding-right: 30px;
+    border: none;
+    font-size: 13.27px;
+    line-height: 18.5833px;
+}
+
+section.five div img.sootherup{
+    width: 303.5px;
+    height: 403.5px;
+    margin: 30px 70px;
+}
+
+section.five div.body p.hand{
+    font-size: 13.27px;
+    font-weight: 500;
+    /* font-family: "Inter", sans-serif; */
+    text-transform: uppercase;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    position: relative;
+    bottom: 15px;
+    left: 65px;
+}
+
+section.five div.body h4{
+    padding: 10px 65px 25px;
+    line-height: 29.0833px;
+    letter-spacing: 2.264333px;
+}
+
+section.five div.body h4 a{
+    font-size: 26.5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Lucida Sans';
+    text-decoration: none;
+    color: #101010;
+}
+
+section.five div.body p.last-p{
+    color: #343434;
+    font-size: 12px;
+    line-height: 16.8px;
+    letter-spacing: 0.2654px;
+    padding: 0px 90px 0px 66px ;
+    margin-right: 30px;
+}
+
+section.five div.right img{
+    /* width: 303.5px; */
+    height: 443.7px;
+    margin: 45px 65px;
+}
+
+section.five div.left div.link{
+    border: none;
+    margin: 30px 60px;
+}
+
+section.five div.left div.link a{
+    font-size: 13px;
+    color: rgb(155, 155, 155);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+section.five div.left div.link a:hover{
+    color: black;
+    transition: 0.7s;
+}
+
+section.five div.left div.link i{
+    color: rgb(119, 119, 119);
+    font-size: 10px;
+}
+
+
+/* //////////////////// */
+
+section.six{
+    display: flex;
+    /* justify-content: center; */
+    /* width: 100%; */
+}
+
+section.six div.left-img{
+    background: url(images/beleco-home-f.jpg);
+    width: 50%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:10% ;
+}
+
+section.six div.left-img h2{
+    color: white;
+    margin: 0px 70px;
+    margin-top: 60vh;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: 'Lucida Sans';
+    text-transform: uppercase;
+    line-height: 76.95px;
+    position: relative;
+    bottom: 67px;
+}
+
+section.six div.left-img div{
+    border: 1px solid white;
+    width: max-content;
+    padding: 8px 25px;
+    font-size: 13.27px;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+}
+
+section.six div.left-img div a{
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+section.six div.left-img div:hover{
+    background-color: black;
+    transition: 0.7s;
+}
+
+section.six div.left-img div i{
+    color: white;
+    font-size: 10px;
+}
+
+section.six div.right-img{
+    background: url(images/beleco-home-b-1024x928.jpg);
+    width: 50%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:10% ;
+}
+
+section.six div.right-img h2{
+    color: white;
+    margin: 0px 70px;
+    margin-top: 60vh;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: 'Lucida Sans';
+    text-transform: uppercase;
+    line-height: 76.95px;
+    position: relative;
+    bottom: 67px;
+}
+
+section.six div.right-img div{
+    border: 1px solid white;
+    width: max-content;
+    padding: 8px 25px;
+    font-size: 13.27px;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+}
+
+section.six div.right-img div a{
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+section.six div.right-img div:hover{
+    background-color: black;
+    transition: 0.7s;
+}
+
+section.six div.right-img div i{
+    color: white;
+    font-size: 10px;
+}
+
+
+/* /////////////////////// */
+
+section.seven{
+    height: 1144px;
+    background-color: rgb(153, 153, 153);
+}
+
+section.seven div.upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.seven div.upper h3{
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 1.894567px;
+    /* line-height: 80.5167px; */
+    font-family: 'Lucida Sans Regular';
+    text-transform: uppercase;
+    margin: 70px;
+}
+
+section.seven h3 span{
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 1.894567px;
+    /* line-height: 80.5167px; */
+    font-family: 'Lucida Sans Regular';
+    text-transform: uppercase;
+    margin: 70px;
+    position: relative;
+    bottom: 33px;
+}
+
+section.seven div.right{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+}
+
+section.seven div.right p{
+    font-size: 13.27px;
+    font-weight: 500;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    margin: 25px 30px;
+}
+
+section.seven div.right div{
+    margin-top: 32px;
+}
+
+section.seven div.right div a{
+font-size: 13.37px;
+font-weight: 500;
+letter-spacing: 0.2654px;
+line-height: 18.5833px;
+text-decoration: none;
+color: #343434;
+}
+
+section.seven div.right div a:hover{
+    color: black;
+}
+
+section.seven div.right div i{
+    font-size: 12px;
+    color: #343434;
+}
+
+section.seven div.cards{
+    width: 85%;
+    margin: 40px 0px 0px 70px;
+    display: flex;
+}
+
+section.seven div.cards li{
+    width: 322px;
+    list-style: none;
+    margin-right: 40px;
+}
+
+section.seven div.cards h3{
+font-size: 19.8px;
+font-weight: 400;
+letter-spacing: 0.2654px;
+line-height: 21.7833px;
+margin: 0px 30px 30px 0px;
+}
+
+section.seven div.cards p{
+    font-size: 14.27px;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    color: rgb(16, 16, 16);
+    margin-top: 45px;
+    margin-bottom: 80px;
+    font-family: "Inter", sans-serif;
+    height: 131px;
+}
+
+section.seven div.cards img{
+    width: 321px;
+    height: 329px;
+}
+
+/* //////////////////////////// */
+
+div.footer{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+div.footer h4{
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 29.0833px;
+    /* padding-top: 16px; */
+    margin:52px 0px 0px 70px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans Regular';
+}
+
+div.footer img{
+    width: 484px;
+    height: 106px;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+/* ////////////////////////////////footer / */
+
+footer{
+    height: 88vh;
+    border-top: 1px solid rgba(196, 196, 196, 0.322);
+    display: flex;
+}
+
+footer.end div.left{
+    width: 32%;
+    /* border-right: 1px solid rgba(196, 196, 196, 0.322); */
+}
+
+footer.end div.left h3{
+    font-size: 29.4333px;
+    font-weight: 700;
+    letter-spacing: 19.2px;
+    line-height: 29.0833px;
+    margin-bottom: 31vh;
+    margin-top: 80px;
+    margin-left: 70px;
+    text-transform: uppercase;
+}
+
+footer.end div.left p.store{
+    font-size: 16.5633px;
+    letter-spacing: 0.2654px;
+    line-height: 23.1833px;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.322);
+    width: 70%;
+}
+
+footer.end div.left p{
+    font-size: 13.27px;
+    font-weight: 500;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    width: 282px;
+    margin: 35px 70px;
+}
+
+footer.end div.left div{
+    margin-left: 70px;
+}
+
+footer.end div.left div a{
+    font-size: 13.37px;
+    font-weight: 500;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    text-decoration: none;
+    color: #343434;
+    }
+    
+    footer.end div.left div a:hover{
+        color: black;
+    }
+    
+    footer.end div.left div i{
+        font-size: 12px;
+        color: #343434;
+    }
+
+footer.end div.right{
+    width: 60%;
+    height: 88vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 85px 0px 0px 55px;
+    margin-left: 45px;
+    border-left: 1px solid rgba(196, 196, 196, 0.322);
+}
+
+footer.end div.right div{
+    width: 181px;
+    height: 268px;
+    /* margin-left: 10px; */
+}
+
+footer.end div.right div ul{
+    list-style: none ;
+}
+
+footer.end div.right div ul li:hover{
+    text-decoration: underline;
+}
+
+footer.end div.right div p{
+    font-size: 16.5633px;
+    letter-spacing: 0.2654px;
+    line-height: 23.1833px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.322);
+}
+
+/* /////////////////////////////////////products */
+
+section.product-page{
+    border-top: 1px solid rgba(196, 196, 196, 0.322);
+    height: 60vh;
+}
+
+section.product-page div h1{
+    font-size: 150px;
+    font-weight: 400;
+    margin-left: 65px;
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    padding-top: 5px;
+    margin-bottom: 40px;
+}
+
+section.product-page nav.product-nav{
+    background-color: rgb(233, 228, 225);
+    height: 65px;
+}
+
+section.product-page nav.product-nav a{
+    font-family: "Inter", sans-serif;
+    font-size: 19.8px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 45.5333px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+}
+
+section.product-page nav.product-nav div a.All{
+    color: black;
+}
+
+section.product-page nav.product-nav div a:hover{
+    color: black;
+}
+
+section.product-page nav.product-nav div{
+    display: flex;
+    width: 50%;
+    margin-left: 60px;
+}
+
+section.product-two div p{
+    font-size: 13.37px;
+    font-weight: 500;
+    letter-spacing: -0.2654px;
+    line-height: 18.5833px;
+    text-decoration: none;
+    opacity: 0.4;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+section.product-two div.space{
+    height: 14vh;
+}
+/* /////////////////////////////////////////////////////// */
+
+section.product-two div.products{
+    display: flex;
+    justify-content: center;
+    height: 103vh;
+}
+
+section.product-two div.products li{
+    position: relative;
+    display: inline-block;
+    width: 310px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+section.product-two div.products .card .img-top{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+section.product-two div.products .card:hover .img-top{
+    display: inline;
+}
+
+section.product-two div.products div img{
+    width: 225px;
+    height: 310px;
+    /* border: 2px solid blueviolet; */
+    margin: 40px;
+}
+
+section.product-two div.products li h1{
+    /* color: red ; */
+    margin-left: 40px;
+    line-height: 23.7667px;
+    font-weight: 500;
+    font-size: 19.8px;
+    letter-spacing: 0.2654px;
+    text-align: start;
+    text-transform: uppercase;
+    margin-right: 120px;
+}
+
+section.product-two div.products li p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.8px;
+    opacity: 0.5;
+    margin: 12px 40px 30px 40px;
+    height: 101px;
+}
+
+section.product-two div.products li a{
+    font-size: 14.27px;
+    font-weight: 500;
+    letter-spacing: 0.2654px;
+    line-height: 13.2667px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+section.product-two div.products li a:hover{
+    text-decoration: underline;
+}
+
+section.product-two div.products li i{
+    font-size: 12px;
+}
+
+
+/* ///////////////////////////About */
+
+section.about-one{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(196, 196, 196, 0.322);
+    padding-top: 22vh;
+}
+
+section.about-one div h2{
+    font-size: 70px;
+    font-weight: 400;
+    margin-left: 70px;
+    letter-spacing: 7px;
+    font-family: 'Lucida Sans Regular';
+    text-transform: uppercase;
+    position: relative;
+    bottom: 13px;
+}
+
+section.about-one div.bottom{
+    display: flex;
+}
+
+section.about-one div.left p{
+    font-size: 26.4333px;
+letter-spacing: -1.24px;
+line-height: 34.3667px;
+width: 475px;
+margin-left: 70px;
+margin-top: 65px;
+}
+
+section.about-one div.bottom p{
+    font-size: 13.37px;
+    letter-spacing: 0.2654px;
+    font-weight: 500;
+    line-height: 18.5833px;
+    width: 245px;
+    margin-top: 33vh;
+}
+
+section.about-one div img{
+    width: 558px;
+    height: 534px;
+    margin-right: 70px;
+}
+
+section.about-two img{
+    width: 100%;
+    height: 100vh;
+    margin-top: 23vh;
+    margin-bottom: 23vh;
+}
+
+/* /////////////////////Journal */
+
+section.Jurnal{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 100px;
+}
+
+section.product{
+    border-top: 1px solid rgba(196, 196, 196, 0.322);
+}
+
+section.product div h1{
+    font-size: 150px;
+    font-weight: 400;
+    margin-left: 65px;
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    padding-top: 5px;
+    margin-bottom: 40px;
+}
+
+section.Jurnal div.upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.Jurnal div.upper h3{
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 1.894567px;
+    font-family: 'Lucida Sans Regular';
+    text-transform: uppercase;
+    margin: 70px;
+}
+
+section.Jurnal h3 span{
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 1.894567px;
+    font-family: 'Lucida Sans Regular';
+    text-transform: uppercase;
+    margin: 70px;
+    position: relative;
+    bottom: 33px;
+}
+
+section.Jurnal div.right{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+}
+
+section.Jurnal div.right p{
+    font-size: 13.27px;
+    font-weight: 500;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    margin: 25px 30px;
+}
+
+section.Jurnal div.right div{
+    margin-top: 32px;
+}
+
+section.Jurnal div.right div a{
+font-size: 13.37px;
+font-weight: 500;
+letter-spacing: 0.2654px;
+line-height: 18.5833px;
+text-decoration: none;
+color: #343434;
+}
+
+section.Jurnal div.right div a:hover{
+    color: black;
+}
+
+section.Jurnal div.right div i{
+    font-size: 12px;
+    color: #343434;
+}
+
+section.Jurnal div.cards{
+    width: 85%;
+    margin: 40px 0px 0px 70px;
+    display: flex;
+}
+
+section.Jurnal div.cards li{
+    width: 322px;
+    list-style: none;
+    margin-right: 40px;
+}
+
+section.Jurnal div.cards h3{
+font-size: 19.8px;
+font-weight: 400;
+letter-spacing: 0.2654px;
+line-height: 21.7833px;
+margin: 0px 30px 30px 0px;
+}
+
+section.Jurnal div.cards p{
+    font-size: 14.27px;
+    letter-spacing: 0.2654px;
+    line-height: 18.5833px;
+    color: rgb(16, 16, 16);
+    margin-top: 45px;
+    margin-bottom: 80px;
+    font-family: "Inter", sans-serif;
+    height: 131px;
+}
+
+section.Jurnal div.cards img{
+    width: 321px;
+    height: 329px;
+}
+
